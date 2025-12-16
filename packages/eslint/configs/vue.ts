@@ -52,6 +52,11 @@ export const createVueConfig = (config: any) => {
         "vue/multi-word-component-names": "off",
         "vue/max-attributes-per-line": "off",
         "vue/singleline-html-element-content-newline": "off",
+        "vue/no-deprecated-v-on-native-modifier": "off",
+        "max-lines": [
+          "error",
+          { max: 500, skipBlankLines: true, skipComments: true },
+        ],
         ...overrides,
       },
     },
